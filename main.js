@@ -1,13 +1,24 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+let searchBtn =document.querySelector('#search-btn');
+let searchBar =document.querySelector('.search-btn-container');
+let formBtn=document.querySelector('#login-btn');
+let loginForm=document.querySelector('.login-form-container');
+let formClose=document.querySelector('#form-close');
+let menu=document.querySelector('#menu-bar');
+let navbar=document.querySelector('.navbar')
 
-hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+
+
+
+menu.addEventListener('click',()=> {
+  
+  
+  navbar.classList.toggle('active');
+})
+
+formBtn.addEventListener('click', () => {
+  loginForm.classList.add('active');
 });
 
-const navLink = document.querySelectorAll('.nav-link');
-navLink.forEach((n) => n.addEventListener("click", function () {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}));
+formClose.addEventListener('click', () => {
+  loginForm.classList.remove('active');
+});

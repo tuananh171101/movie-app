@@ -1,46 +1,457 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel booking</title>
-    <link rel="stylesheet" href="main.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <script src="main.js"></script>
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+      <link rel="stylesheet" href="main.css">
+      <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+      
+
   </head>
   <body>
-    <section class="head">
-      <header class="header">
-        <div class="container">
-          <div class="navbar flex">
-            <div class="sticky_logo logo">
-              <img src="img/logof.png" alt="" />
-            </div>
-            <ul class="nav-menu">
-              <li><a href="#home"  class="nav-link">Home</a></li> 
-              <li><a href="#about" class="nav-link">About</a></li>
-              <li><a href="#room" class="nav-link">Room</a></li>
-              <li><a href="#shop" class="nav-link">Shop</a></li>
-              <li><a href="#blog" class="nav-link">Blog</a></li>
-              <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-            
-         
-          </div>
+
+      <header>
+      <div id="menu-bar" class="fa fa-bars"></div>
+        <a href="#" class="logo"><span>HO</span>tel</a>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#book">Book</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact </a>
+
+          
+
+        </nav>
+
+        
+        <div class="icon">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
         </div>
+
+        <form action="" class="search-btn-container">
+          <input type="search" id ="search-bar" placeholder="Search here......">
+          <label for="search-bar" class="fas fa-search"></label>
+        </form>
+        
+
+
       </header>
+
+      <!--login form-->
+      <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+          <h3>Login</h3>
+          <input type="email" class="box" placeholder="Enter your email">
+          <input type="password" class="box" placeholder="Enter your password">
+          <input type="submit" value="login now" class="btn">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember me</label>
+          <p>Forgot password <a href="#">Click here</a></p>
+          <p>Don't have a account <a href="#">Register now </a></p> 
+        </form> 
+
       </div>
+
+      <!--home 
+         <section class="home" id="home">
+            <div class="content">
+              <h3>Welcome to a hotel</h3>
+              <p></p>
+              <a href="#" class="'btn">Discover more</a>
+            </div>
+      </section>
+      page-->
+     
+<!--booking section starts-->
+
+     <section class="book" id="book">
+       <h1 class="heading">
+          <span>b</span>
+          <span>o</span>
+          <span>o</span>
+          <span>k</span>
+          
+          <span>n</span>
+          <span>o</span>
+          <span>w</span>
+      </h1>
+      <div class="row">
+        <div class="img">
+          <img src="img/booking.svg" alt="">
+        </div>
+      
+
+      <form action="">
+        <div class="inputBox">
+          <h3>where to</h3>
+          <input type="text" placeholder="place name">
+        </div>
+
+        <div class="inputBox">
+          <h3>how many</h3>
+          <input type="number" placeholder="number of guess">
+        </div>
+        
+        
+        <div class="inputBox">
+          <h3>arrivals</h3>
+          <input type="date">
+        </div>
+        <div class="inputBox">
+          <h3>leaving</h3>
+          <input type="date">
+        </div>
+
+      </form>
+    </div>
+     </section>
+
+<!--packages-->
+
+     <section class="packages" id="packages">
+      <h1 class="heading">
+          <span>p</span>
+          <span>a</span>
+          <span>c</span>
+          <span>k</span>
+          <span>a</span>
+          <span>g</span>
+          <span>e</span>
+          <span>s</span>
+  
+      </h1>
+  
+      <div class="box-container"> 
+          <div class="box">
+              <img data-lazyloaded="1" src="img/16.jpg" decoding="async" data-src="img/16.jpg" alt="">
+              <div class="content">
+                  <h3><i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                  <p>Mumbai is one of the largest cities in India. Visiting Mumbai you will visit the Elephanta cave, visit the Indian school of design and creativity. In particular, you will have the opportunity to discover Bollywood - the film capital in India, where many famous and familiar movies are produced.</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $490.00 <span>$650.00</span></div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img data-lazyloaded="1" src="img/17.jpg" decoding="async" data-src="img/17.jpg" alt="">
+              <div class="content">
+                  <h3><i class="fas fa-map-marker-alt"></i> sydney </h3>
+                  <p>SYDNEY CITY: THE WORLD'S LIVEST CITY
+                    Sydney is the largest, most famous and oldest city in Australia. Sydney is known as the "Port City", located on the southeast coast of Australia. Sydney was built around Port Jackson with famous scenic beauty. We can try and have experience</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $390.00 <span>$500.00</span></div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img data-lazyloaded="1" src="img/18.jpg" decoding="async" data-src="img/18.jpg" alt="">
+              <div class="content">
+                  <h3><i class="fas fa-map-marker-alt"></i> hawaii </h3>
+                  <p>Hawaii is a paradise of natural beauty, with many opportunities to explore and enjoy incredible sights. From the dramatic seascapes of the beaches to the lush green forests of the valleys, there is something for everyone and everything.We can try and have experience and decide to booking </p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $500.00 <span>$650.00</span></div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+        </section>
+
+        <!--services-->
+        <section class="services" id="services">
+          <h1 class="heading">
+              <span>s</span>
+              <span>e</span>
+              <span>r</span>
+              <span>v</span>
+              <span>i</span>
+              <span>c</span>
+              <span>e</span>
+              <span>s</span>
+          </h1>
+      
+          <div class="box-container">
+              <div class="box">
+                  <i class="fas fa-hotel"></i>
+                      <h3>affordable hotels</h3>
+                      <p>Bringing you the best hotels at the best prices</p>
+              </div>
+              <div class="box">
+                  <i class="fas fa-utensils"></i>
+                      <h3>food and drinks</h3>
+                      <p>Bringing you the best meals and drinks from the region's top chefs</p>
+              </div>
+              <div class="box">
+                  <i class="fas fa-bullhorn"></i>
+                      <h3>safety</h3>
+                      <p>always be safe when you come to our flight</p>
+              </div>
+              <div class="box">
+                  <i class="fas fa-globe-asia"></i>
+                      <h3>around the world</h3>
+                      <p>take you anywhere in the world with just one click</p>
+              </div>
+              <div class="box">
+                  <i class="fas fa-plane"></i>
+                      <h3>fastest travel</h3>
+                      <p>Committed to the fastest and safest flights in the country</p>
+              </div>
+              <div class="box">
+                  <i class="fas fa-hiking"></i>
+                      <h3>adventures</h3>
+                      <p>Bringing unforgettable experiences during the journey</p>
+              </div>
+          </div>
+      </section>
+<!--gallery-->
+      <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+    
+    
+    <div class="box-container">
+        <div class="box">
+            <img data-lazyloaded="1" src="img/9.jpg" decoding="async" data-src="img/9.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p></p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img data-lazyloaded="1" src="img/11.jpg" decoding="async" data-src="img/11.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p></p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img data-lazyloaded="1" src="img/12.jpg" decoding="async" data-src="img/12.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p></p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img data-lazyloaded="1" src="img/13.jpg" decoding="async" data-src="img/13.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p></p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img data-lazyloaded="1" src="img/14.jpg" decoding="async" data-src="img/14.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p></p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img data-lazyloaded="1" src="img/15.jpg" decoding="async" data-src="img/15.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p></p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        
+    </div>
+
     </section>
 
-   
+    <section class="review" id="review">
+      <h1 class="heading">
+          <span>r</span>
+          <span>e</span>
+          <span>v</span>
+          <span>i</span>
+          <span>e</span>
+          <span>w</span>
+      </h1>
+      <div class="swiper mySwiper review-slider">
+          <div class="swiper-wrapper wrapper">
+              <div class="swiper-slide">
+                  <div class="box">
+                      <img data-lazyloaded="1" src="img/22.png" decoding="async" data-src="img/22.png" alt="">
+                      <h3>Lalisa Bey</h3>
+                      <p>It was a good experience in my life. I will come back next time
+                            </p>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                              
+                            
+                          </div>
+                  </div>
+              </div>
+  
+              <div class="swiper-slide">
+                  <div class="box">
+                      <img data-lazyloaded="1" src="img/24.png" decoding="async" data-src="img/25.png" alt="">
+                      <h3>Lisa Bey</h3>
+                      <p>i love everything but the journey is quite expensive</p>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                          </div>
+                  </div>
+              </div>
+  
+              <div class="swiper-slide">
+                  <div class="box">
+                      <img data-lazyloaded="1" src="img/23.png" decoding="async" data-src="img/23.png" alt="">
+                      <h3>Kevin Trapp</h3>
+                      <p>it's all alright . my hotel is good but the food is not suitable for</p>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                          </div>
+                  </div>
+              </div>
+  
+              <div class="swiper-slide">
+                  <div class="box">
+                      <img data-lazyloaded="1" src="img/26.png" decoding="async" data-src="img/26.png" alt="">
+                      <h3>Edward Bey</h3>
+                      <p></p>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                          </div>
+                  </div>
+                  </div>
+          </div>
+      </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="img">
+            <img data-lazyloaded="1" src="img/hotel contact.svg" decoding="async" data-src="img/contact-img.svg" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Phone of number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea placeholder="Message" name="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Send message">
+        </form>
+    </div>
+
+    <section class="footer">
+      <div class="box-container">
+          <div class="box">
+              <h3>about us</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Totam natus asperiores voluptas aliquam vitae odio. Beatae doloribus facere nostrum magni.</p>
+          </div>
+          <div class="box">
+              <h3>branch locations</h3>
+              <a href="#">USA</a>
+              <a href="#">india</a>
+              <a href="#">japan</a>
+              <a href="#">philippines</a>
+              <a href="#">france</a>
+          </div>
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#">home</a>
+              <a href="#">package</a>
+              <a href="#">service</a>
+              <a href="#">gallery</a>
+              <a href="#">review</a>
+              <a href="#">contact</a>
+              <a href="#">book</a>
+          </div>
+          <div class="box">
+              <h3>follow us</h3>
+              <a href="#">facebook</a>
+              <a href="#">instagram</a>
+              <a href="#">twitter</a>
+              <a href="#">likedin</a>
+          </div>
+      </div>
+     
+  </section>
+</section>
+
+
+
+
+
   </body>
-</html>
+  <script src="main.js"></script>
+ 
+
+
+
+  </html>
